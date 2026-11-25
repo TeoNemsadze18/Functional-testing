@@ -1,0 +1,22 @@
+# TC-SRCH-001 – Verify Recipe Search Returns Exact Match When Queried by Recipe ID
+
+- **Severity:** Medium
+- **Environment:** Production · macOS Sonoma 14.4 · MacBook Air (Apple M1) · Safari 17.4 (anonymized)
+- **Reproducibility:** 100%
+
+## Summary
+Verify that entering a valid recipe ID into the website search bar ("ძებნა") returns the corresponding recipe in the search results instead of a "not found / does not exist" message.
+
+## Steps
+1. Open the recipe website and locate any recipe along with its valid ID.
+2. Click on the search bar ("ძებნა") and enter the recipe ID.
+3. Submit the search query and observe the displayed search results.
+
+## Actual
+Searching by a valid recipe ID fails to return the recipe and displays a message stating that no such product/item exists.
+
+## Expected
+Searching by a valid recipe ID should return the matching recipe in the search results.
+
+## Notes
+Functional Correctness / Search & Indexing Logic. Verify whether recipe IDs are indexed and supported in the search query.
